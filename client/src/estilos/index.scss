@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(5, 6, 12);
+}
+
+.contenedor{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    .area-respusta{
+        width: 30%;
+        height: 90%;
+        border-radius: 15px;
+        margin: auto 0 auto auto;
+        background: rgb(236, 238, 252);
+        display: flex;
+        flex-direction: column;
+        .res{
+            width: 98%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .respuesta{
+                width: 80%;
+                text-align: justify;
+                height: 90%;
+                margin:5% auto 0 auto;
+                overflow: hidden;
+                color: rgb(2, 2, 29);
+                font-family: arial;
+                font-size: 1.5rem;
+            }
+            .boton{
+                margin: auto auto 5% auto;
+                font-size: 1.5rem;
+                width: 300px;
+                height: 50px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                background: rgb(2, 2, 53);
+                    color: white;
+                    &:hover{
+                        background: rgb(9, 9, 119);
+                    }
+            }
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+            margin: auto auto 0 auto;
+        }
+        .texto{
+            margin:0 auto auto auto ;
+            width: 60%;
+            text-align: center;
+        }
+        img{
+            max-width: 80%;
+            margin: auto auto 0 auto;
+        }
+    }
+    .area-texo{
+        width: 68%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        .areabotones{
+            width: 100%;
+            display: flex;
+            height: fit-content;
+            margin: auto auto 1% auto;
+            .boton{
+                margin: auto;
+                font-size: 1.5rem;
+                width: 300px;
+                height: 50px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                &:nth-child(1){
+                    background: rgb(2, 2, 53);
+                    color: white;
+                    &:hover{
+                        background: rgb(9, 9, 119);
+                    }
+                }
+                &:nth-child(2){
+                    background: rgb(217, 217, 243);
+                    color: rgb(3, 3, 44);
+                    &:hover{
+                        background: rgb(190, 190, 209);
+                    }
+                }
+            }
+        }
+        #areatext{
+            width: 100%;
+            resize: none;
+            height: 70%;
+            margin-top: 5%;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            outline: none;
+        }
+    }
+}
+.cargando{
+    border: 4px solid rgb(175, 175, 175);
+    border-bottom: 4px solid rgb(16, 16, 180);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    animation: cargando 1s linear infinite;
+}
+@keyframes cargando {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
