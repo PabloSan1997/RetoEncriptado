@@ -33,6 +33,7 @@ export function Provedor({ children }: Children) {
             })();
         }else{
             setTextos({...textos, des:""})
+            setLoading(false);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [activar]);
